@@ -1,6 +1,6 @@
 "use client";
 
-import {useRef, useEffect, Suspense} from "react";
+import {useRef, useEffect, Suspense, useState} from "react";
 import Editor from "@/components/editor/Editor";
 import Sidebar from "@/components/sidebar/Sidebar";
 import Preview from "@/components/preview/Preview";
@@ -105,8 +105,59 @@ function EditorPageContent() {
         applyThemeSettings(selectedTheme);
     };
 
-    const handlePrint = () => {
-        window.print();
+    const [isExporting, setIsExporting] = useState(false);
+
+    const handleExportPdf = async () => {
+        if (isExporting) return;
+
+        setIsExporting(true);
+        try {
+            const previewElement = previewContainerRef.current;
+            if (!previewElement) {
+                throw new Error('Preview container not found');
+            }
+
+            const response = await fetch('/api/generate-pdf', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    html: previewElement.innerHTML,
+                    theme: theme,
+                    styles: {
+                        fontName: font,
+                        fontScale: fontScale,
+                        headingScale: headingScale,
+                        lineHeightScale: lineHeightScale,
+                        xPaddingScale: xPaddingScale,
+                        yPaddingScale: yPaddingScale,
+                        headerColor: headerColor,
+                        textColor: textColor,
+                        linkColor: linkColor,
+                    },
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to generate PDF');
+            }
+
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('Error exporting PDF:', error);
+            alert('Failed to export PDF. Please try again.');
+        } finally {
+            setIsExporting(false);
+        }
     };
 
     return (
@@ -122,7 +173,8 @@ function EditorPageContent() {
             <Sidebar
                 font={font}
                 setFont={setFont}
-                handlePrint={handlePrint}
+                handleExportPdf={handleExportPdf}
+                isExporting={isExporting}
                 onThemeChange={handleThemeChange}
                 onFontChange={setFont}
                 onFontSizeChange={setFontScale}

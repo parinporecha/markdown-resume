@@ -5,7 +5,8 @@ import {SidebarButtons} from "@/components/sidebar/SidebarButtons";
 import ColorSection from "@/components/sidebar/ColorSection";
 
 interface SidebarProps {
-    handlePrint: () => void;
+    handleExportPdf: () => void;
+    isExporting: boolean;
     onThemeChange: (theme: string) => void;
     onFontSizeChange: (size: number) => void;
     onLineHeightChange: (height: number) => void;
@@ -29,11 +30,11 @@ interface SidebarProps {
     setFont: (font: string) => void;
 }
 
-const Sidebar = ({font, setFont, handlePrint, onThemeChange, onFontSizeChange, onYPaddingChange, onXPaddingChange, onLineHeightChange, onFontChange, fontScale, lineHeightScale, headingScale, onHeadingChange, xPaddingScale, yPaddingScale, selectedTheme, headerColor, setHeaderColor, textColor, setTextColor, linkColor, setLinkColor,}: SidebarProps) => {
+const Sidebar = ({font, setFont, handleExportPdf, isExporting, onThemeChange, onFontSizeChange, onYPaddingChange, onXPaddingChange, onLineHeightChange, onFontChange, fontScale, lineHeightScale, headingScale, onHeadingChange, xPaddingScale, yPaddingScale, selectedTheme, headerColor, setHeaderColor, textColor, setTextColor, linkColor, setLinkColor,}: SidebarProps) => {
     return (
         <div className="sidebar hidden md:block flex-col justify-between fixed right-0 top-0 bottom-0 max-w-[320px] w-full bg-white ml-10 border border-gray-200 overflow-auto">
             <div>
-                <SidebarButtons handlePrint={handlePrint}/>
+                <SidebarButtons handleExportPdf={handleExportPdf} isExporting={isExporting}/>
                 <ThemeSection onThemeChange={onThemeChange} selectedTheme={selectedTheme}/>
                 <FontSection font={font} setFontAction={setFont} onFontChangeAction={onFontChange} onFontSizeChangeAction={onFontSizeChange} fontScale={fontScale} headingScale={headingScale} onHeadingChangeAction={onHeadingChange}/>
                 <LayoutSection onLineHeightChangeAction={onLineHeightChange} onXPaddingChangeAction={onXPaddingChange} onYPaddingChangeAction={onYPaddingChange} lineHeightScale={lineHeightScale} xPaddingScale={xPaddingScale} yPaddingScale={yPaddingScale}/>
