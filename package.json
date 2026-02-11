@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && firebase deploy"
+    "deploy": "next build && firebase deploy",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -23,6 +25,7 @@
     "lucide-react": "^0.462.0",
     "next": "15.0.3",
     "next-mdx-remote": "^4.4.1",
+    "puppeteer": "^24.36.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
@@ -35,6 +38,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

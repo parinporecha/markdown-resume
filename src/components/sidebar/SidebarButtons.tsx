@@ -1,17 +1,22 @@
-import {Coffee, Download} from "lucide-react";
+import {Coffee, Download, Loader2} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 
 interface ButtonsProps {
-    handlePrint: () => void;
+    handleExportPdf: () => void;
+    isExporting: boolean;
 }
 
-export const SidebarButtons = ({handlePrint}: ButtonsProps) => {
+export const SidebarButtons = ({handleExportPdf, isExporting}: ButtonsProps) => {
     return (
         <div className='px-4 flex gap-3 border-t p-4'>
-            <Button onClick={handlePrint} variant="outline" size="sm"   className="w-1/2" >
-                <Download className="h-4 w-4 mr-2"/>
-                Export PDF
+            <Button onClick={handleExportPdf} variant="outline" size="sm" className="w-1/2" disabled={isExporting}>
+                {isExporting ? (
+                    <Loader2 className="h-4 w-4 mr-2 animate-spin"/>
+                ) : (
+                    <Download className="h-4 w-4 mr-2"/>
+                )}
+                {isExporting ? 'Exporting...' : 'Export PDF'}
             </Button>
             <Button size="sm" asChild   className="w-1/2">
                 <Link href="https://www.buymeacoffee.com/rozitahasani" target="_blank">
