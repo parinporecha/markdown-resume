@@ -132,3 +132,9 @@ Working at a parent-participation daycare where parents actively shape operation
 
 **Bachelors in Computer Science and Engineering** *International Institute of Information Technology, Hyderabad (IIIT-H) | 2011-2015*
 
+<!-- heading colour - #c4756b -->
+<!-- link colour - #7b9ea8 -->
+<!-- text colour - #3a3a3a -->
+<!-- font - ubuntu, 12.8, line height 1.4 -->
+<!-- h2 heading has bottom border 1px, margin top 1.5em, margin bottom 0.5em -->
+<!-- h3 heading has slightly bigger size -->
