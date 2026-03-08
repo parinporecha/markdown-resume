@@ -32,15 +32,15 @@ interface ThemeProps {
 
 export const themes: { [key: string]: ThemeProps } = {
     tehran: {
-        fontName: 'Inter',
+        fontName: 'Ubuntu',
         fontScale: 1,
-        headingScale: 1,
-        lineHeightScale: 1.5,
+        headingScale: 1.1,
+        lineHeightScale: 1.6,
         xPaddingScale: 24,
         yPaddingScale: 0,
-        headerColor: "#222",
-        textColor: '#444',
-        linkColor: "#1a73e8"
+        headerColor: "#c4756b",
+        textColor: '#3a3a3a',
+        linkColor: "#7b9ea8"
     },
     isfahan: {
         fontName: 'Poppins',

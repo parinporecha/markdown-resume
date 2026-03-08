@@ -22,7 +22,7 @@ Technical lead on the Metasearch data platform, the backbone of Booking's ML-dri
 - I lead the most challenging key results like SOX compliance, Data clean rooms, PII data handling and grow juniors by delegating pieces that stretch them.
 - My day-to-day work spans the full stack - from GCP infra maintenance, PySpark optimizations, UI development, to authoring RFCs for stakeholder alignment.
 - Drive the product roadmap alongside the Product Manager by defining success metrics, delivery scope, gathering user feedback, and pushing for ideas that move the numbers. I shape MVPs and jump in to unblock stalled projects when things get stuck.
-- Build the team culture by onboarding and mentoring engineers, setting standards around data contracts and observability and engineering craft. I bridge the gap between our team and adjacent ones by running syncs, sharing what we've learned, and pulling in patterns that work elsewhere.
+- Build the team culture by onboarding and mentoring engineers, setting standards around data contracts, observability and engineering craft. I bridge the gap between our team and adjacent ones by running syncs, sharing what we've learned, and pulling in patterns that work elsewhere.
 - Lead and guide on responsible LLM-assisted development through legacy migration initiatives (Perl → Python on AWS); automated support triage and incident management to cut on-call toil.
 
 ---
@@ -31,7 +31,7 @@ Technical lead on the Metasearch data platform, the backbone of Booking's ML-dri
 
 *March 2021 - April 2024 | 3 years 2 months*
 
-Owned the Server-to-Server marketing events product end-to-end - the one I'm most proud of. Third-party tracking tags were unreliable and leaking data - I identified the problem, pitched the replacement, built it, and drove adoption. The pipeline built using Perl, Kafka, Elasticsearch and Hadoop sends consented conversion signals and user interactions (~100k/sec) to ad platforms. It delivered 15%+ increase in tracked conversions, new mobile app tracking, and 9% lift in incremental ROI.
+Owned the Server-to-Server marketing events product end-to-end - the one I'm most proud of. Third-party tracking tags were unreliable and leaking data - I identified the problem, pitched the replacement, built it, and drove adoption. The pipeline built using Perl, Kafka, Elasticsearch and Hadoop sends consented conversion signals and user interactions (~100k/sec) to 10+ ad platforms. It delivered 15%+ increase in tracked conversions, new mobile app tracking, and 9% lift in incremental ROI.
 
 - Took it from idea to production to department-wide adoption. Defined the vision and SLAs, prioritized features against business needs, navigated regulatory constraints (GDPR, CCPA), wrote the code, and onboarded every ad platform.
 - Drove development by coordinating with 8-10 stakeholder teams inside and outside the company. I also ran outreach with the team's PM - onboarded 3 teams and worked closely with them to iterate.
@@ -46,7 +46,7 @@ Owned the Server-to-Server marketing events product end-to-end - the one I'm mos
 Built and owned a new hotel catalogue feed system, enabling structured feed generation and delivery to ad platforms at scale. This system generates localized feeds for 1.5M+ hotels and 150+ markets, producing hundreds of GBs of partner feed data daily across all the ad platforms.
 
 - Enabled experimentation in brand campaigns and creative personalization at scale; partnered with data scientists on ML-based brand-safety checks (explicit content and human imagery detection) that blocked unsafe creatives to reduce brand reputation risks.
-- Built internal tools that gave the marketers superpowers that ad platforms couldn't offer - unified performance tracking, bulk ad management, and automated creative uploads allowing them to manage 10+ platforms through a single interface.
+- Built internal tools using React, Perl and Cassandra that gave the marketers powers that ad platforms couldn't offer - unified performance tracking, bulk ad management, and automated creative uploads across 10+ platforms from one screen.
 - Introduced Elasticsearch for fast querying over this data which let non-technical users answer their own questions without engineering help.
 - Implemented the initial conversion tracking on Tealium and Google Tag Manager; the reliability problems I hit here are what led me to pitch the server-to-server replacement in my next role.
 
@@ -93,11 +93,11 @@ Maintained GNOME-Sudoku and Getting Things GNOME! (a personal tasks organizer fo
 
 Selected as 1 of 23 globally for CERN Openlab. Automated VM image provisioning for CERN's OpenStack cloud, reducing build time from ~20 minutes to under 10 seconds. This replaced a slow, error-prone workflow that required manual interventions with a near one-click experience making restless physicists happy.
 
-* **Google Summer of Code - GNOME organization** *Summer 2014*
+* **Google Summer of Code - GNOME Foundation** *Summer 2014*
 
 Ported GNOME Sudoku from Python to Vala (C# like language), modernized the UI to match GNOME Human Interface Guidelines, and collaborated with GNOME designers on interaction details. Continued contributing after the internship and took on maintainer responsibilities: coordinating releases and guiding contributors.
 
-* **Google Summer of Code - GNOME organization** *Summer 2013*
+* **Google Summer of Code - GNOME Foundation** *Summer 2013*
 
 Contributed to Getting Things GNOME!. Worked on the core desktop app built in GTK+, GLib and C (bug fixes, task model, UI improvements) and built a companion web application in Django enabling task sync with the desktop client. Stayed on as maintainer after the internship. Reviewed patches, guided contributors, and shaped the project's direction.
 
@@ -107,7 +107,7 @@ Contributed to Getting Things GNOME!. Worked on the core desktop app built in GT
 
 * **Antler VC Residency** *January 2023 - March 2024*
 
-Co-founded a startup during Antler residency. Built multiple MVPs in weeks, conducted 50+ user interviews to validate hypotheses, pivoted multiple times and eventually made the hard decision to wind down based on market signals. I learnt a lot about building from 0 to 1 and customer discovery here.
+Co-founded a startup during Antler residency, fully self-funded. Conducted 30+ user interviews to validate hypotheses, built multiple MLPs, pivoted multiple times and eventually made the hard decision to wind down based on market signals. I learnt lessons in customer discovery, rapid pivoting, and the discipline to find a real problem before building a solution.
 
 * **UVB-76** *May 2025 - present*
 
@@ -123,18 +123,11 @@ Working at a parent-participation daycare where parents actively shape operation
 
 * **Languages:** Python, Perl, JavaScript, TypeScript, C
 * **Tools:** Kafka, Spark, BigQuery, Airflow, Elasticsearch, PostgreSQL, Grafana, Snowflake
-* **Infrastructure & Cloud:** GCP, Kubernetes, Docker, Terraform
-* **Moderate:** Go, Java, React
+* **Infrastructure & Cloud:** GCP, Kubernetes, Docker, AWS,Terraform
+* **Moderate:** Go, Java, React, Cassandra
 
 
 
 ## Education
 
 **Bachelors in Computer Science and Engineering** *International Institute of Information Technology, Hyderabad (IIIT-H) | 2011-2015*
-
-<!-- heading colour - #c4756b -->
-<!-- link colour - #7b9ea8 -->
-<!-- text colour - #3a3a3a -->
-<!-- font - ubuntu, 12.8, line height 1.4 -->
-<!-- h2 heading has bottom border 1px, margin top 1.5em, margin bottom 0.5em -->
-<!-- h3 heading has slightly bigger size -->
