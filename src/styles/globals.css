@@ -17,9 +17,9 @@
     --lineHeightScale: 1.5;
     --xPaddingScale: 20px;
     --yPaddingScale: 0px;
-    --headerColor: #000;
-    --textColor: #000;
-    --linkColor: #1a73e8;
+    --headerColor: #c4756b;
+    --textColor: #3a3a3a;
+    --linkColor: #7b9ea8;
 }
 
 .previewContainer {

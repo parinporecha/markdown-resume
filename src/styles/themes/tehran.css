@@ -11,18 +11,22 @@
 
 .theme.tehran h1 {
     font-weight: 800;
-    font-size: calc(2.25rem * var(--fontScale) * var(--headingScale, 1));
+    font-size: calc(2.45rem * var(--fontScale) * var(--headingScale, 1));
     margin-top: 0;
     text-align: left;
-    color: var(--headerColor, #222);
+    color: var(--textColor, #3a3a3a);
 }
 
 .theme.tehran h2 {
     position: relative;
-    color: var(--headerColor, #222);
+    color: var(--headerColor, #c4756b);
     font-weight: 600;
     font-size: calc(1.5rem * var(--fontScale) * var(--headingScale, 1));
-    margin-top: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--headerColor);
+    border-bottom-width: 1px;
 }
 
 .theme.tehran h2:before {
@@ -37,7 +41,7 @@
 
 .theme.tehran h3 {
     font-size: calc(1.25rem * var(--fontScale) * var(--headingScale, 1));
-    color: var(--headerColor, #222);
+    color: var(--textColor, #222);
     margin-top: 0.5em;
     font-weight: 600;
 }
@@ -52,7 +56,7 @@
 }
 
 .theme.tehran a {
-    color: var(--linkColor, #222);
+    color: var(--linkColor, #7b9ea8);
     text-decoration: underline;
     font-weight: 600;
 }
