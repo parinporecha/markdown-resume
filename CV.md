@@ -75,7 +75,7 @@ Early engineer (#11) at a startup aggregating e-commerce product data across ret
 
 Shipped products in the Location Intelligence team that directly improved last-mile delivery efficiency.
 
-- Led the address clustering initiative, increasing delivery executive productivity by 3× through better stop density and route efficiency.
+- Led the address clustering initiative, increasing delivery executive productivity by 3x through better stop density and route efficiency.
 - Designed and shipped the full Flipkart Maps stack end-to-end: custom map styling, tile generation, and serving pipeline. Replaced dependency on Google Maps with an in-house product.
 - Architected a distributed tile pre-rendering system across 100+ machines (≈2,000 cores), generating 6 billion tiles in under 8 hours, without managed services.
 - Built an image compression service that reduced storage costs by 75% for customer signature data while maintaining fidelity.
@@ -122,8 +122,9 @@ Working at a parent-participation daycare where parents actively shape operation
 ## Skills
 
 * **Languages:** Python, Perl, JavaScript, TypeScript, C
-* **Tools:** Kafka, Spark, BigQuery, Airflow, Elasticsearch, PostgreSQL, Grafana, Snowflake
+* **Tools:** Kafka, Spark, BigQuery, Airflow, Redis, Elasticsearch, PostgreSQL, Grafana, Snowflake
 * **Infrastructure & Cloud:** GCP, Kubernetes, Docker, AWS,Terraform
+* **AI/LLM:** Prompt engineering (CoT, ToT, few-shot), RAG pipelines, agentic workflows, vector search
 * **Moderate:** Go, Java, React, Cassandra
 
 
