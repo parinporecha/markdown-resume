@@ -10,7 +10,7 @@ import {ReactNode} from "react";
 
 export const metadata: Metadata = {
     // Basic Metadata
-    title: "Markdown Resume - Create Professional Resumes with Markdown",
+    title: "Resume",
     description: "Create a professional resume by writing in Markdown, using our simple editor, and choosing from various templates to export your resume easily.",
     keywords: [
         "Resume Builder",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         "Next.js Resume App",
     ].join(", "),
     openGraph: {
-        title: "Markdown Resume - Create Professional Resumes with Markdown",
+        title: "Resume",
         description: "Write your resume in Markdown, edit it easily, choose a professional template, and export it as a PDF. Try our Resume Builder today!",
         type: "website",
         url: `${baseUrl}`,
